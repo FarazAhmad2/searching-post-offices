@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Post Offices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <section class="section-1">
+            <h1>Post Office Application.</h1>
+            <p>This Application Allows you to extract information about the nearest Post Offices, based on your
+                location.</p>
+            <div class="img-fluid">
+                <img src="./assets/postman.svg" alt="postman image">
+            </div>
+        </section>
+        <section class="section-2">
+            <h1>Your Current IP Address is <span class="ip-address">127.0.01</span></h1>
+            <button id="get-started">Get Started</button>
+        </section>
+    </div>
+
+    <main id="main-content">
+        <div id="user-info">
+            <h1>IP Address : <span class="ip-address">127.0.01</span></h1>
+            <div class="container">
+                <!-- User information will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <div id="location">
+            <h1>Your Current Location</h1>
+            <iframe id="map" src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="360"
+                height="270" frameborder="0" style="border:0"></iframe>
+        </div>
+
+        <div id="more-info">
+            <!-- User information will be dynamically inserted here -->
+        </div>
+
+        <div id="post-office">
+            <h1>Post Offices Near You</h1>
+            <div class="search-box">
+                <input id="search" type="text" placeholder="Search By Name">
+                <img src="./assets/search_icon.svg" alt="search_icon">
+            </div>
+            <div class="card-container">
+                <!-- Post office cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-1 {
+    background-color: #000000;
+    padding: 2rem 2.5rem;
+    width: 50%;
+    height: 100vh;
+    flex: 1 1 450px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.section-1 h1 {
+    line-height: 43.88px;
+    color: #575A85;
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-1 p {
+    font-size: 1.2rem;
+    line-height: 29.05px;
+    color: #B8BCCC;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-fluid img {
+    width: 60%;
+}
+
+.section-2 {
+    padding: 30px 25px;
+    width: 50%;
+    background-color: #575A85;
+    color: #B8BCCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+    height: 100vh;
+    flex: 1 1 450px;
+}
+
+.ip-address {
+    color: #ffffff;
+}
+
+.section-2 h1 {
+    font-size: 2rem;
+}
+
+#get-started {
+    width: 15rem;
+    height: 3.2rem;
+    border: 2px solid #B8BCCC;
+    border-radius: 10px;
+    color: #B8BCCC;
+    background-color: transparent;
+    font-size: 1.2rem;
+    line-height: 33.89px;
+    cursor: pointer;
+    transition: background-color 0.9s ease-in-out 0.4s;
+}
+
+#get-started:hover {
+    background-color: #8f92b7;
+}
+
+#main-content {
+    background-color: #000000;
+    display: none;
+}
+
+#user-info .container {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    line-height: 41.15px;
+    color: #575A85;
+    font-weight: 700;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+
+#user-info {
+    padding: 40px 30px;
+}
+
+.user-info {
+    color: #B8BCCC;
+    font-weight: 400;
+}
+
+#user-info h1 {
+    color: #575A85;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    line-height: 41.45px;
+}
+
+#location {
+    background-color: #575A85;
+    padding: 40px 30px 50px;
+}
+
+#location h1 {
+    padding-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: center;
+    color: #B8BCCC;
+}
+
+#map {
+    width: 100%;
+    height: 80vh;
+}
+
+#more-info {
+    padding: 40px 30px;
+}
+
+#more-info h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: center;
+    color: #B8BCCC;
+    margin-bottom: 40px;
+}
+
+#more-info p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 41.15px;
+    color: #575A85;
+}
+
+.pincodes {
+    color: #B8BCCC;
+    font-weight: 400;
+}
+
+#post-office {
+    padding: 40px 30px;
+}
+
+#post-office h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: center;
+    color: #B8BCCC;
+}
+
+.search-box {
+    margin: 30px 0;
+    width: 100%;
+    position: relative;
+}
+
+.search-box input {
+    padding: 10px;
+    padding-left: 50px;
+    width: 100%;
+    height: 3rem;
+    border: 3px solid #575A85;
+    border-radius: 10px;
+    color: #B8BCCC;
+    background-color: transparent;
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    line-height: 39.01px;
+}
+
+.search-box input::placeholder {
+    color: #B8BCCC;
+}
+
+.search-box img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.card {
+    background-color: #575A85;
+    color: #B8BCCC;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 41.45px;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.card-data {
+    color: #B8BCCC;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 991px) {
+    .section-1 {
+        height: auto;
+    }
+
+    .img-fluid {
+        padding: 30px 0;
+        height: auto;
+    }
+
+    .section-2 {
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .section-1 p,
+    #get-started {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
