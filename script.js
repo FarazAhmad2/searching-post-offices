@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://api.ipify.org?format=json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         ipAddress.textContent = data.ip;
         getInfo(data);
       })
@@ -35,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
       fetch(`https://ipapi.co/${data.ip}/json/`)
         .then((response) => response.json())
         .then((result) => {
-          console.log(result);
           populateData(result);
         });
     });
@@ -79,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(`https://api.postalpincode.in/pincode/${data.postal}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         document.querySelector(
           ".total-pins"
         ).textContent = `Number of pincode(s) found: ${data[0].PostOffice.length}`;
