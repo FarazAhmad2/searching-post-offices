@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const wrapper = document.getElementById("wrapper");
 
   function setEqualHeight() {
-    var section1 = document.querySelector('.section-1');
-    var section2 = document.querySelector('.section-2');
-    section2.style.height = section1.offsetHeight + 'px';
+    var section1 = document.querySelector(".section-1");
+    var section2 = document.querySelector(".section-2");
+    section2.style.height = section1.offsetHeight + "px";
   }
 
   window.onload = setEqualHeight;
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://api.ipify.org?format=json")
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         ipAddress.textContent = data.ip;
         getInfo(data);
       })
@@ -29,11 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function getInfo(data) {
     getStartedBtn.addEventListener("click", () => {
-      console.log("user's ip address:", data.ip);
       wrapper.style.display = "none";
       fetch(`https://ipapi.co/${data.ip}/json/`)
         .then((response) => response.json())
         .then((result) => {
+          console.log(result);
           populateData(result);
         });
     });
